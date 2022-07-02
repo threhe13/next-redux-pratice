@@ -1,4 +1,5 @@
 import { Card, Button, Box, CardContent, Typography } from '@mui/material';
+import { useDispatch } from 'react-redux';
 
 export const getServerSideProps = (context) => {
   console.log(context);
@@ -7,7 +8,7 @@ export const getServerSideProps = (context) => {
   };
 };
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Card sx={{ display: 'flex', flexDirection: 'column', m: 4, p: 4 }}>
@@ -20,4 +21,6 @@ export default function Home() {
       </Card>
     </>
   );
-}
+};
+
+export default Home;
