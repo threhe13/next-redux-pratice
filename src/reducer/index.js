@@ -1,4 +1,4 @@
-import { combineReucers } from 'redux';
+import { combineReucers } from '@redux/core';
 
 import { loadingReducer, initialState as loadingInitialState } from './loading';
 
